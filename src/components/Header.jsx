@@ -36,7 +36,7 @@ export default function Header() {
     setOpen(prevOpen => !prevOpen)
   }
   return (
-    <AppBar sx={{ background: '#1176cf' }} position='sticky'>
+    <AppBar position='sticky'>
       <MainToolbar>
         <Typography variant='h6' sx={{ display: { xs: "none", sm: 'block' } }}>
           WebDev.

@@ -2,7 +2,7 @@ import { Brightness4, FolderShared, Group, Home, Pages, Person, Settings, Storef
 import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Switch } from '@mui/material'
 import React from 'react'
 
-export default function Sidebar() {
+export default function Sidebar(props) {
   return (
     <Box
       flex={1}
@@ -65,7 +65,7 @@ export default function Sidebar() {
               <ListItemIcon>
                 <Brightness4 color="default" />
               </ListItemIcon>
-              <Switch />
+              <Switch checked={props.mode === "dark" ? true : 0} onClick={props.toggle} />
             </ListItemButton>
           </ListItem>
         </List>
